@@ -18,4 +18,39 @@ This project involves:
 3. Create a Power BI dashboard for interactive exploration of customer segments and trends.
 4. Provide actionable insights for stakeholders.
 
+### Tools Used
+- **Microsoft Excel**: [Download Here](https://www.microsoft.com)
+  1. Initial data exploration
+  2. Pivot Tables
+  3. Basic metrics calculations
+
+  - **SQL**: Extracting deeper insights and answering key business questions [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- **PowerBI**: Building an interactive dashboard to visualize insights [Download Here](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads)
+- **GitHub**: for Portfolio Building [Download Here](https://github.com)
+
+### Data Collected
+The dataset includes the following key columns;
+- **CustomerID**: Unique identifier for each order.
+- **CustomerName**: Name of the customer.
+- **Region**: Geographic region of the customer.
+- **SubscriptionType**: Type of subscription (e.g., Basic, Premium, Standard).
+- **SubscriptionStart and SubscriptionEnd**: Start and end dates of the subscription.
+- **Canceled**: Indicates whether the subscription was canceled.
+- **Revenue**: Revenue generated from each customer.
+- **Subscription Duration and other variations in duration** (e.g., days, months, years).
+
+### Project Workflow
+1. ## Excel Analysis
+- **Subscription Patterns**: Using pivot tables to reveal trends in subscription types and cancellation behaviors.
+- Calculated average sales per product and total revenue by region.
+- **Average Subscription Duration**: Calculated to understand the lifespan of typical subscriptions.
+- Identify the most popular subscription types.
+- **Reports**: Additional insights and trends based on subscription type, duration, and region.
+  
+
+
+
+
+
+
 
