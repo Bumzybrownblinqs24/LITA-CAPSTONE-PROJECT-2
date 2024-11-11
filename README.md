@@ -60,6 +60,108 @@ The dataset includes the following key columns;
 ![Pivot Table 5](https://github.com/user-attachments/assets/8ff2e207-e631-4078-bf86-e990583fa1f1)
 
 
+## 2. SQL Analysis
+Using SQL, I extracted insights such as:
+- **Total number of customers from each region.**
+
+```SQL
+SELECT Region, COUNT(CustomerID) AS Total_No_of_Customers
+FROM [dbo].[Customer Data]
+GROUP BY Region
+```
+
+![SQL CD](https://github.com/user-attachments/assets/30cd11d5-ec5d-4717-aa1d-aeb920b9e0df)
+
+- **Find the most popular subscription type by the number of customers.**
+
+```SQL
+SELECT SubscriptionType,COUNT(CustomerID)AS NO_Of_Customers
+FROM [dbo].[Customer Data]
+GROUP BY SubscriptionType
+```
+
+![SQL CD 1](https://github.com/user-attachments/assets/58602cfe-b401-4a98-a584-eae144a6a995)
+
+- **Find customers who canceled their subscription within 6 months**
+
+```SQL
+SELECT CustomerName,Canceled,SubscriptionStart
+FROM [dbo].[Customer Data]
+WHERE Canceled =0 AND MONTH(SubscriptionStart) <= 6
+```
+
+![SQL CD 2](https://github.com/user-attachments/assets/532a9aef-4b5d-4e2c-9b4a-c9dd55529338)
+
+
+- **Calculate the average subscription duration for all customers**
+
+```SQL
+SELECT Count(CustomerID) As All_Customers,AVG(DATEDIFF(DAY,SubscriptionStart,SubscriptionEnd)) AS Average_Subscription_Duration
+FROM [dbo].[Customer Data]
+WHERE SubscriptionEnd IS NOT NULL
+```
+
+![SQL CD 3](https://github.com/user-attachments/assets/48a71259-a140-47e4-842d-e8b0b89d9bd9)
+
+- **Find customers with subscriptions longer than 12 months.DATEDIFF**
+
+```SQL
+SELECT CustomerName,SubscriptionType,SubscriptionStart,SubscriptionEnd
+FROM [dbo].[Customer Data]
+WHERE DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd) >=12
+```
+
+![SQL CD 4](https://github.com/user-attachments/assets/107736b7-a00e-43a6-91aa-7159cbfe55aa)
+
+- **calculate total revenue by subscription type**
+
+```SQL
+SELECT SubscriptionType,SUM(Revenue) AS Total_Revenue
+	FROM[dbo].[Customer Data]
+	GROUP BY SubscriptionType
+```
+
+![SQL CD 5](https://github.com/user-attachments/assets/356f3111-79b1-4ff7-bf0f-5a0f79b55da1)
+
+- **Find the top 3 regions by subscription cancellations**
+
+  ```SQL
+  SELECT TOP 3 Region,Canceled
+FROM [dbo].[Customer Data]
+```
+
+![SQL CD 6](https://github.com/user-attachments/assets/855dc0e8-e3a2-470b-943e-065f92d308dd)
+
+- **Find the total number of active and canceled subscriptions**
+
+```SQL
+SELECT
+SUM( CASE WHEN Canceled = 0 THEN 1 ELSE 0  END) AS ActiveSubscriptions,
+SUM (CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
+FROM [dbo].[Customer Data]
+GROUP BY CustomerID
+```
+
+![SQL CD 7](https://github.com/user-attachments/assets/0afc9060-b5b8-4e6f-aaf7-696034621466)
+
+
+## 3. PowerBi Dashboard
+
+Using PowerBi, I created an interactive Power BI dashboard that visualizes key customer segments, cancellations, subscription trends and also included slicers for filtering data by region, subscription type, and status. 
+
+The dashboard also includes:
+
+- Customer segmentation by region and subscription type
+- Revenue breakdown by subscription type
+- Monthly Sales Trend
+- Trends in subscription duration and cancellation rates
+
+
+
+
+
+
+
 
 
 
