@@ -177,6 +177,54 @@ The dashboard also includes:
 ![PowerBi(Customer Data)](https://github.com/user-attachments/assets/2f0f8730-9b0f-4dc2-8d9d-717b39350a32)
 
 
+### Key Insights
+
+- 1. **Customer Segmentation:**
+
+  - Customers are evenly distributed across the four regions (East, North, South, and West), with each region accounting for an equal share of the customer base.
+    The "Basic" subscription type is the most popular, with the highest number of subscribers compared to "Premium" and "Standard" types.
+
+- 2. **Subscription Duration:**
+
+  - The average subscription duration across all customers is approximately 365 days (1 year).
+    A significant number of customers have subscriptions longer than 12 months, indicating a tendency for long-term engagements.
+
+- 3. **Cancellations and Trends:**
+
+  - The regions with the highest number of cancellations are North, South, and West, in that order. No customers canceled their subscriptions within the first 6 months, suggesting either 
+    strong customer retention during the initial period or a data limitation in tracking cancellations.
+
+- 4. **Revenue Analysis:**
+
+  - The Basic subscription type generates the highest revenue (₦33,776,735), followed by Premium and Standard, which generate ₦16,899,064 and ₦16,864,376 respectively.
+
+
+### Outcomes
+  - The analysis successfully identified customer segments by region and subscription type.
+  - Subscription durations were calculated and categorized to highlight trends in customer behavior.
+  - Revenue contributions by subscription type were quantified, helping identify the most profitable offerings.
+
+
+### Inferences
+  - The high popularity and revenue of the "Basic" subscription type suggest that it is the preferred entry point for customers, possibly due to affordability or perceived value.
+  - Even distribution of customers across regions points to consistent market penetration but might also indicate untapped growth potential if tailored strategies are applied regionally.
+  - The absence of early cancellations highlights effective onboarding strategies or contract structures that encourage initial commitment.
+
+
+### Conclusion
+  - The analysis underscores the importance of the "Basic" subscription type in driving customer acquisition and revenue.
+  - Long subscription durations reflect customer satisfaction or contractual obligations. However, the high cancellation rates in certain regions signal an opportunity for improved retention 
+    strategies.
+  - These insights can guide targeted marketing efforts, service enhancements, and strategic decisions to optimize customer lifetime value and overall business growth.
+
+
+🥇
+
+💻
+
+☑️
+
+
 
 
 
