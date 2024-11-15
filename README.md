@@ -2,6 +2,24 @@
 
 ## Project Title 2: Customer Segmentation for a Subscription Service
 
+[Project Summary](#project-summary)
+
+[Project Objectives](#project-objectives)
+
+[Tools Used](#tools-used)
+
+[Data Collected](#data-collected)
+
+[Project Workflow](project-workflow)
+
+[Key Insights](#key-insights)
+
+[Outcomes](#outcomes)
+
+[Inferences](inferences)
+
+[Conclusion](conclusion)
+
 ### Project Summary
 ---
 This project involves analyzing customer data for a subscription service to uncover customer behavior patterns, track subscription preferences, and identify key trends in cancellations and renewals.
@@ -153,9 +171,10 @@ The dashboard also includes:
 
 - Customer segmentation by region and subscription type
 - Revenue breakdown by subscription type
-- Monthly Sales Trend
 - Trends in subscription duration and cancellation rates
 
+
+![PowerBi(Customer Data)](https://github.com/user-attachments/assets/2f0f8730-9b0f-4dc2-8d9d-717b39350a32)
 
 
 
